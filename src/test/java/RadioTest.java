@@ -1,6 +1,7 @@
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Assertions;
+
 public class RadioTest {
     @Test
     public void shouldSetWave() {
@@ -270,6 +271,7 @@ public class RadioTest {
         int actual = radio.getCurrentWave();
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     public void shouldGetPrevWave() {
         Radio radio = new Radio();
@@ -280,6 +282,7 @@ public class RadioTest {
         int actual = radio.getCurrentWave();
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     public void shouldGetPrevWave1() {
         Radio radio = new Radio();
@@ -290,6 +293,7 @@ public class RadioTest {
         int actual = radio.getCurrentWave();
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     public void shouldGetPrevWave3() {
         Radio radio = new Radio();
@@ -300,14 +304,13 @@ public class RadioTest {
         int actual = radio.getCurrentWave();
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     public void shouldGetPrevWave4() {
         Radio radio = new Radio();
         radio.setCurrentWave(9);
         radio.prevWave();
-        int expected = 8
-
-                ;
+        int expected = 8;
 
         int actual = radio.getCurrentWave();
         Assertions.assertEquals(expected, actual);

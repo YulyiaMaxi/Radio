@@ -38,7 +38,7 @@ public class Radio {
         } else {
             currentWave = 0;
         }
-return currentWave;
+        return currentWave;
     }
 
     public int prevWave() {
@@ -48,16 +48,16 @@ return currentWave;
             currentWave = 9;
 
         }
-return currentWave;
+        return currentWave;
     }
 
     public int increaseVolume() {
         if (currentVolume != 100) {
-            currentVolume ++;
+            currentVolume++;
         } else {
             currentVolume = 100;
         }
-return currentVolume;
+        return currentVolume;
     }
 
     public int decreaseVolume() {
@@ -66,8 +66,8 @@ return currentVolume;
         } else {
             currentVolume = 0;
 
-    }
-return currentVolume;
+        }
+        return currentVolume;
     }
 
 
