@@ -316,6 +316,27 @@ public class RadioTest {
         Assertions.assertEquals(expected, actual);
     }
 
+    @Test
+    public void shouldKeepAmountOfWaves() {
+        Radio radio = new Radio(10);
+        radio.setCurrentWave(10);
+        Assertions.assertEquals(0, radio.getCurrentWave());
+
+    }
+
+    @Test
+    public void shouldKeepAmountOfWaves2() {
+        Radio radio = new Radio(10);
+        radio.setCurrentWave(9);
+        Assertions.assertEquals(9, radio.getCurrentWave());
+    }
+
+    @Test
+    public void shouldKeepAmountOfWaves3() {
+        Radio radio = new Radio(1);
+        radio.setCurrentWave(0);
+        Assertions.assertEquals(0, radio.getCurrentWave());
+    }
 }
 
 
